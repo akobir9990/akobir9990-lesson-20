@@ -1,0 +1,91 @@
+nav {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  transition: 0.2s;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+  z-index: 5;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d4ff;
+  transition: 0.5s;
+  #navbar-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .list__item {
+  }
+  .item__link {
+    font-size: 30px;
+  }
+}
+#navbar-open {
+  display: none;
+  background: transparent;
+  border: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+.nav__menu {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+.navbar-shrink {
+  padding: 0;
+}
+
+.nav__container {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Тень */
+}
+.nav__list {
+  display: flex;
+  gap: 35px;
+}
+.item__link {
+  color: #333;
+  font-family: "Manrope-500";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+.nav__btn button {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(122deg, #f32c6d 29.57%, #cb1d95 85.47%);
+  border: none;
+  border-radius: 9px;
+
+  color: #fff;
+  font-family: "Manrope-600";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px; /* 162.5% */
+  cursor: pointer;
+}
